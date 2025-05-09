@@ -211,7 +211,7 @@ input {
 /* Buttons are styled with padding, rounded corners, and a green background. */
 button {
     padding: 10px 20px; /* Adds padding inside the button. */
-    background-color: blue; /* Sets the background color to blue. */
+    background-color:blue; /* Sets the background color to blue. */
     color: white; /* Sets the text color to white. */
     border: none; /* Removes the border. */
     border-radius: 5px; /* Rounds the corners of the button. */

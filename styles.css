@@ -14,7 +14,13 @@ body {
     margin: 0; /* Removes default margin around the body. */
     font-family: Arial, Helvetica, sans-serif; /* Sets the font to Arial or a fallback sans-serif font. */
     text-align: center; /* Centers text horizontally. */
-    background-color: lightblue; /* Sets the background color to a light blue. */
+    background-image: url(images/background.png);/* Sets a background image. */
+    background-size: cover; /* Ensures the background image covers the entire body. */
+    background-repeat: no-repeat; /* Prevents the background image from repeating. */
+    background-position: center; /* Centers the background image. */
+    background-attachment: fixed; /* Fixes the background image in place. */
+    background-color: white; /* Sets a fallback background color to white. */
+    color: black; /* Sets the text color to black. */
 }
 
 /* The h1 element is centered horizontally with padding set to auto. */
@@ -28,7 +34,7 @@ p {
     padding: auto; /* Centers the padding automatically. */
     text-align: center; /* Aligns the text to the center. */
     font-size: larger; /* Increases the font size. */
-    line-height: 1.5; /* Sets the line height for better readability. */
+    line-height: 1.5em; /* Sets the line height for better readability. */
     margin: 0; /* Removes default margin. */
     letter-spacing: 1px; /* Adds space between letters. */
     word-spacing: 1px; /* Adds space between words. */
@@ -150,6 +156,7 @@ ul li {
     margin: 5px 0; /* Adds vertical spacing between list items. */
     padding: 10px; /* Adds padding inside each list item. */
     border-radius: 5px; /* Rounds the corners of each list item. */
+    color: white; /* Sets the text color to white. */
 }
 
 /* Footer */
@@ -249,7 +256,42 @@ button:hover {
     color: white; /* Sets the text color to white. */
 }
 .logo img {
-    width: 90px; /* Sets the width of the logo image. */
+    width: 100px; /* Sets the width of the logo image. */
     height: auto; /* Maintains the aspect ratio of the logo image. */
     float: left; /* Aligns the logo image to the left of the text. */
 }
+.container {padding: 2rem;}
+
+.slider-wrapper {position: relative;
+max-width: 48rem;
+margin: 0 auto;}
+
+.slider {display: flex;
+aspect-ratio: 16 / 9;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+border-radius: 0.1rem;
+ -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */}
+
+.slider img {flex: 1 0 100%;
+scroll-snap-align: start;
+object-fit: cover;}
+
+.slider-nav {display: flex;
+column-gap: 1rem;
+position: absolute;
+bottom: 1.25rem;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;}
+
+.slider-nav a {width: 0.5rem;
+height: 0.5rem;
+border-radius: 50%;
+background-color: white;
+opacity: 0.75;
+transition: opacity ease 250ms;}
+
+.slider-nav a:hover {opacity: 1;}

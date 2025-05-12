@@ -1,11 +1,8 @@
-/*I chose a monochromatic color scheme with the color green.
-The color green is often associated with nature, growth, and harmony.
-It is a calming color that can evoke feelings of tranquility and balance.
-I chose this color scheme because it is visually appealing and can create a sense of peace and relaxation for the users.
-Indigenous people often have a deep connection to nature, and the color green can represent that connection.
-The color green is also associated with healing and renewal, which can be relevant to the themes of Indigenous culture and history.
-I also chose the color white for my neutral color because it represents purity and simplicity.
-The color white can create a clean and fresh look, which can help to highlight the content of the website.
+/*I chose a monochromatic color scheme with the color red.
+The color red is often associated with energy, passion, and action. It can evoke strong emotions and is often used to grab attenion.
+The color red is also associated with warmth and can create a welcoming atmosphere. It can stimulate the mind and increase heart rate.
+The color red is also part of the medicine wheel which is a big part of the Indigenous culture. The red color represents the East direction and is associated with the element of fire, which symbolizes energy, passion, and action. It is also associated with the season of spring, which represents new beginnings and growth.
+The color red is also a very bold color and can be used to create a strong visual impact.
 The grade level I chose for this website is Grade 4-8*/
 
 /* General Styles */
@@ -39,7 +36,7 @@ p {
     letter-spacing: 1px; /* Adds space between letters. */
     word-spacing: 1px; /* Adds space between words. */
 }
-nav {background-color: navy; /* blue-600 */
+nav {background-color: rgb(158, 38, 38); /*sets the background color to red */
     padding: 16px;
     text-align: center;}
 
@@ -51,7 +48,8 @@ nav {background-color: navy; /* blue-600 */
         border-radius: 6px;
         transition: background-color 0.3s ease;
         display: inline-block;}
-nav a:hover {background-image: linear-gradient(to right, #2563eb, #22c55e); /* Blue to Green gradient */;
+nav a:hover {background-image: linear-gradient(to right, orange, yellow); /*red-600 to yellow-600 */
+    /* Changes the background color to a gradient on hover. */;
     transition: background-image 0.3s ease;}
 /* Navbar Styles */
 /* The navbar is a flex container with space between items, vertically centered, and styled with a green background and white text. */
@@ -104,7 +102,7 @@ nav a:hover {background-image: linear-gradient(to right, #2563eb, #22c55e); /* B
     .nav-links {
         display: none; /* Hides the navigation links by default. */
         flex-direction: column; /* Stacks links vertically. */
-        background-color: navy; /* Sets the background color to blue. */
+        background-color: rgb(158, 38, 38); /* Sets the background color to blue. */
         position: absolute; /* Positions the links relative to the viewport. */
         top: 60px; /* Positions the links below the navbar. */
         left: 0; /* Aligns the links to the left edge. */
@@ -126,7 +124,7 @@ nav a:hover {background-image: linear-gradient(to right, #2563eb, #22c55e); /* B
 /* Header */
 /* The header is styled with a dark green background and black text. */
 header {
-    background-color: navy; /* Sets the background color to blue. */
+    background-color: rgb(158, 38, 38); /* Sets the background color to red. */
     color: black; /* Sets the text color to black. */
     padding: 10px; /* Adds padding inside the header. */
     margin-bottom: 20px; /* Adds spacing below the header. */
@@ -152,7 +150,7 @@ ul {
 }
 
 ul li {
-    background-color: navy; /* Sets the background color to blue. */
+    background-color: rgb(158, 38, 38); /* Sets the background color to red. */
     margin: 5px 0; /* Adds vertical spacing between list items. */
     padding: 10px; /* Adds padding inside each list item. */
     border-radius: 5px; /* Rounds the corners of each list item. */
@@ -162,10 +160,12 @@ ul li {
 /* Footer */
 /* The footer is styled with a dark green background and white text. */
 footer {
-    background: navy; /* Sets the background color to dark green. */
+    background: rgb(158, 38, 38); /* Sets the background color to dark red. */
     color: white; /* Sets the text color to white. */
     padding: 10px; /* Adds padding inside the footer. */
     margin-top: 20px; /* Adds spacing above the footer. */
+    bottom: auto; /* Resets the bottom position. */
+    width: 100%; /* Makes the footer span the full width. */
 }
 
 /* Text and Image Container */
@@ -218,7 +218,7 @@ input {
 /* Buttons are styled with padding, rounded corners, and a green background. */
 button {
     padding: 10px 20px; /* Adds padding inside the button. */
-    background-color:blue; /* Sets the background color to blue. */
+    background-color: rgb(158, 38, 38); /* Sets the background color to blue. */
     color: white; /* Sets the text color to white. */
     border: none; /* Removes the border. */
     border-radius: 5px; /* Rounds the corners of the button. */
@@ -228,7 +228,7 @@ button {
 /* Button Hover */
 /* Changes the background color of the button when hovered. */
 button:hover {
-    background-image: linear-gradient(to right, #2563eb, #22c55e); /* Blue to Green gradient */
+    background-image: linear-gradient(to right, orange, yellow); /* Blue to Green gradient */
     transition: background-image 0.3s ease; /* Adds a smooth transition effect. */;
 }
 
@@ -241,7 +241,7 @@ button:hover {
     right: 40px; /* Positions the button 40px from the right of the viewport. */
     padding: 10px 20px; /* Adds padding inside the button for a larger clickable area. */
     font-size: 16px; /* Sets the font size of the button text. */
-    background-color: blue; /* Sets the background color to a medium green. */
+    background-color: rgb(158, 38, 38); /* Sets the background color to a medium green. */
     color: white; /* Sets the text color to white. */
     border: none; /* Removes the border around the button. */
     border-radius: 8px; /* Rounds the corners of the button. */
@@ -250,7 +250,7 @@ button:hover {
     z-index: 1000; /* Ensures the button appears above other elements. */
 }
 #topButton:hover {
-    background-image: linear-gradient(to right, #2563eb, #22c55e); /* Blue to Green gradient */; /* Darkens the background color on hover. */
+    background-image: linear-gradient(to right, orange, yellow); /* Blue to Green gradient */; /* Darkens the background color on hover. */
     transition: background-image 0.3s ease; /* Adds a smooth transition effect. */
     /* The button will change color when hovered over. */
     color: white; /* Sets the text color to white. */

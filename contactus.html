@@ -17,6 +17,7 @@
         h1 {font-size: 1.6em;}
         /* Style for the main heading, setting font size to 1.6em */
     </style>
+
     <header>
         <!-- Header section containing the main title and navigation menu -->
         <div class="logo">
@@ -85,5 +86,30 @@
         <p tabindex="20">Website designed by [Aayan].</p>
         <!-- Footer section with copyright information -->
     </footer>
+    <div class="rating-card">
+    <div class="logo"><img src="images/Logo.png" alt="Logo of Naawi-Oodena Webite"></div>
+    <p class="question">How would you rate your recent experience with <strong>Naawi-Oodena</strong>?</p>
+    <div class="stars" id="rating-stars">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <p class="footer">Powered by Naawi-Oodena</p>
+</div>
+<script>
+    // Paste the JavaScript here
+    const stars = document.querySelectorAll('.star');
+    stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        const rating = index + 1;
+        stars.forEach((s, i) => {
+        s.classList.toggle('selected', i < rating);
+        });
+        console.log("Rated:", rating);
+    });
+    });
+</script>
 </body>
 </html>

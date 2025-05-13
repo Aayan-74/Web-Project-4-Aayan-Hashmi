@@ -166,6 +166,7 @@ footer {
     margin-top: 20px; /* Adds spacing above the footer. */
     bottom: auto; /* Resets the bottom position. */
     width: 100%; /* Makes the footer span the full width. */
+    
 }
 
 /* Text and Image Container */
@@ -295,3 +296,62 @@ opacity: 0.75;
 transition: opacity ease 250ms;}
 
 .slider-nav a:hover {opacity: 1;}
+
+.rating-card {
+  margin-top: 40px;
+  margin-right: 40px;
+  float: right;
+  width: 360px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  text-align: center;}
+
+.rating-card .logo {
+  color: #f36f6f;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f36f6f;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.rating-card .question {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.rating-card .stars {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.rating-card .star {
+  font-size: 40px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.rating-card .star.selected {
+  color: #f36f6f;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.rating-card .footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #aaa;
+}

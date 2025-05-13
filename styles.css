@@ -36,7 +36,7 @@ p {
     letter-spacing: 1px; /* Adds space between letters. */
     word-spacing: 1px; /* Adds space between words. */
 }
-nav {background-color: rgb(158, 38, 38); /*sets the background color to red */
+nav {background-color: rgb(114, 24, 24); /*sets the background color to red */
     padding: 16px;
     text-align: center;}
 
@@ -102,7 +102,7 @@ nav a:hover {background-image: linear-gradient(to right, orange, yellow); /*red-
     .nav-links {
         display: none; /* Hides the navigation links by default. */
         flex-direction: column; /* Stacks links vertically. */
-        background-color: rgb(158, 38, 38); /* Sets the background color to blue. */
+        background-color: rgb(114, 24, 24); /* Sets the background color to blue. */
         position: absolute; /* Positions the links relative to the viewport. */
         top: 60px; /* Positions the links below the navbar. */
         left: 0; /* Aligns the links to the left edge. */
@@ -124,7 +124,7 @@ nav a:hover {background-image: linear-gradient(to right, orange, yellow); /*red-
 /* Header */
 /* The header is styled with a dark green background and black text. */
 header {
-    background-color: rgb(158, 38, 38); /* Sets the background color to red. */
+    background-color: rgb(114, 24, 24); /* Sets the background color to red. */
     color: black; /* Sets the text color to black. */
     padding: 10px; /* Adds padding inside the header. */
     margin-bottom: 20px; /* Adds spacing below the header. */
@@ -150,7 +150,7 @@ ul {
 }
 
 ul li {
-    background-color: rgb(158, 38, 38); /* Sets the background color to red. */
+    background-color: rgb(114, 24, 24); /* Sets the background color to red. */
     margin: 5px 0; /* Adds vertical spacing between list items. */
     padding: 10px; /* Adds padding inside each list item. */
     border-radius: 5px; /* Rounds the corners of each list item. */
@@ -160,7 +160,7 @@ ul li {
 /* Footer */
 /* The footer is styled with a dark green background and white text. */
 footer {
-    background: rgb(158, 38, 38); /* Sets the background color to dark red. */
+    background: rgb(114, 24, 24); /* Sets the background color to dark red. */
     color: white; /* Sets the text color to white. */
     padding: 10px; /* Adds padding inside the footer. */
     margin-top: 20px; /* Adds spacing above the footer. */
@@ -218,7 +218,7 @@ input {
 /* Buttons are styled with padding, rounded corners, and a green background. */
 button {
     padding: 10px 20px; /* Adds padding inside the button. */
-    background-color: rgb(158, 38, 38); /* Sets the background color to blue. */
+    background-color: rgb(114, 24, 24); /* Sets the background color to blue. */
     color: white; /* Sets the text color to white. */
     border: none; /* Removes the border. */
     border-radius: 5px; /* Rounds the corners of the button. */
@@ -241,7 +241,7 @@ button:hover {
     right: 40px; /* Positions the button 40px from the right of the viewport. */
     padding: 10px 20px; /* Adds padding inside the button for a larger clickable area. */
     font-size: 16px; /* Sets the font size of the button text. */
-    background-color: rgb(158, 38, 38); /* Sets the background color to a medium green. */
+    background-color: rgb(114, 24, 24); /* Sets the background color to a medium green. */
     color: white; /* Sets the text color to white. */
     border: none; /* Removes the border around the button. */
     border-radius: 8px; /* Rounds the corners of the button. */

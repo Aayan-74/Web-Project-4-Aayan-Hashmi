@@ -1,142 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- The language of the document is set to English -->
-<!-- This is the main HTML document for the Services page of the Naawi-Oodena website -->
+<!-- Declares the document type as HTML5 and sets the language to English -->
+
 <head>
     <meta charset="UTF-8">
-    <!-- Character encoding for the document, set to UTF-8 -->
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Viewport settings for responsive design, ensuring proper scaling on different devices -->
+    <!-- Ensures the webpage is responsive and scales properly on different devices -->
+
     <title>Contact Us</title>
-    <!-- Title of the webpage, displayed in the browser tab -->
-    <!-- The title of the page is set to "Services" -->
+    <!-- Sets the title of the webpage, displayed in the browser tab -->
+
     <link rel="stylesheet" href="styles.css">
-    <!-- Link to the external CSS stylesheet for styling the webpage -->
+    <!-- Links to an external CSS file for styling the webpage -->
+
     <style>
-        /* CSS styles for the webpage */
-        h1 {font-size: 1.6em;}
-        /* Style for the main heading, setting font size to 1.6em */
+        /* Inline CSS styles for the webpage */
+        h1 {
+            font-size: 1.6em;
+        }
+        /* Sets the font size for all <h1> elements */
     </style>
 </head>
+
 <body>
     <header>
-        <!-- Header section containing the main title and navigation menu -->
+        <!-- Header section containing the logo, navigation menu, and main heading -->
+
         <div class="logo">
-                <img src="images/Logo.png" alt="Naawi-Oodena logo" tabindex="1">
-                <!-- Logo image for the website, with a fallback text for accessibility -->
-            </div>
+            <img src="images/Logo.png" alt="Naawi-Oodena logo" tabindex="1">
+            <!-- Displays the website's logo with a fallback text for accessibility -->
+        </div>
+
         <nav class="navbar">
-            <!-- Navigation bar containing links to different sections of the website -->
+            <!-- Navigation bar containing links to different pages of the website -->
+
             <ul class="nav-links">
                 <!-- Unordered list for organizing navigation links -->
                 <li><a href="index.html" tabindex="2">Home</a></li>
-                <!-- Link to the "About Us" page, focusable via keyboard navigation -->
-                <li><a href="contactus.html" tabindex="3">Contact us</a></li>
-                <!-- Link to the "Contact Us" page -->
-                <li><a href="aboutus.html" tabindex="4">About Us</a></li>
-                <!-- Link to the "Resources" page -->
-                <li><a href="services.html" tabindex="5">Services</a></li>
                 <!-- Link to the homepage -->
+                <li><a href="contactus.html" tabindex="3">Contact us</a></li>
+                <!-- Link to the Contact Us page -->
+                <li><a href="aboutus.html" tabindex="4">About Us</a></li>
+                <!-- Link to the About Us page -->
+                <li><a href="services.html" tabindex="5">Services</a></li>
+                <!-- Link to the Services page -->
             </ul>
-            <div class="menu-toggle">&#9776;</div>
-            <!-- Menu toggle button for mobile navigation. -->
-        </nav>
-        <h1 tabindex="6" style="color: gold;">Contact Us</h1>
-    </header>
-        <section class="center-content">
-            <h1 tabindex="7">Reach out to us here!</h1>
-            </section>
-            <section class="center-content">
-        <p tabindex="8">We would love to hear from you! If you have any questions, comments, or feedback, please feel free to reach out to us.
-        Naawi-Oodena is committed to creating a vibrant, sustainable community that honors the land and its history. We aim to foster economic growth, cultural revitalization, and social well-being for all.</p>
-</section>
 
-<section class="center-content">
+            <div class="menu-toggle">&#9776;</div>
+            <!-- Menu toggle button for mobile navigation -->
+        </nav>
+
+        <h1 tabindex="6" style="color: gold;">Contact Us</h1>
+        <!-- Main heading for the Contact Us page -->
+    </header>
+
+    <section class="center-content">
+        <!-- Section for introductory content -->
+        <h1 tabindex="7">Reach out to us here!</h1>
+    </section>
+
+    <section class="center-content">
+        <!-- Section for a brief description of the organization's mission -->
+        <p tabindex="8">
+            We would love to hear from you! If you have any questions, comments, or feedback, please feel free to reach out to us.
+            Naawi-Oodena is committed to creating a vibrant, sustainable community that honors the land and its history. We aim to foster economic growth, cultural revitalization, and social well-being for all.
+        </p>
+    </section>
+
+    <section class="center-content">
+        <!-- Section for the contact form heading -->
         <h1 tabindex="9">Send us a message here:</h1>
-        </section>
-        <section class="center-content">
+    </section>
+
+    <section class="center-content">
+        <!-- Section containing the contact form -->
         <form action="submit_form.php" method="post">
+            <!-- Form for users to send a message -->
+
             <label for="name">Name:</label>
+            <!-- Label for the name input field -->
             <input type="text" id="name" name="name" required tabindex="10">
             <!-- Input field for the user's name, required for form submission -->
 
             <label for="email">Email:</label>
+            <!-- Label for the email input field -->
             <input type="email" id="email" name="email" required tabindex="11">
             <!-- Input field for the user's email, required for form submission -->
 
             <label for="message">Message:</label>
+            <!-- Label for the message text area -->
             <textarea id="message" name="message" required style="border-radius: 20px;" tabindex="12"></textarea>
             <!-- Text area for the user's message, required for form submission -->
-<br>
+
+            <br>
             <button type="submit" tabindex="13">Submit</button>
+            <!-- Submit button for the form -->
         </form>
-        <!-- Form for users to send a message, with fields for name, email, and message -->
+
         <p tabindex="14">We will get back to you as soon as possible.</p>
-</section>
+        <!-- Message displayed below the form -->
+    </section>
+
     <section class="center-content">
+        <!-- Section for additional contact information -->
         <h1 tabindex="15">Other Contact Information</h1>
         <p tabindex="16">If you prefer to reach us directly, you can contact us at:</p>
         <p tabindex="17">Naawi-Oodena@gmail.com</p>
+        <!-- Email address for direct contact -->
         <p tabindex="18">Or</p>
         <p tabindex="19">(204) 123-4567</p>
+        <!-- Phone number for direct contact -->
     </section>
+
     <div class="rating-card">
-    <div class="logo"><img src="images/Logo.png" alt="Logo of Naawi-Oodena Webite" tabindex="20"></div>
-    <p class="question" tabindex="21">How would you rate your recent experience with <strong>Naawi-Oodena</strong>?</p>
-    <div class="stars" id="rating-stars">
-    <span class="star" data-value="1" tabindex="22">&#9733;</span>
-    <span class="star" data-value="2" tabindex="23">&#9733;</span>
-    <span class="star" data-value="3" tabindex="24">&#9733;</span>
-    <span class="star" data-value="4" tabindex="25">&#9733;</span>
-    <span class="star" data-value="5" tabindex="26">&#9733;</span>
+        <!-- Section for the user rating card -->
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo of Naawi-Oodena Website" tabindex="20">
+            <!-- Displays the logo again within the rating card -->
+        </div>
+
+        <p class="question" tabindex="21">
+            How would you rate your recent experience with <strong>Naawi-Oodena</strong>?
+        </p>
+        <!-- Question prompting the user to rate their experience -->
+
+        <div class="stars" id="rating-stars">
+            <!-- Star rating system -->
+            <span class="star" data-value="1" tabindex="22">&#9733;</span>
+            <!-- Star for rating 1 -->
+            <span class="star" data-value="2" tabindex="23">&#9733;</span>
+            <!-- Star for rating 2 -->
+            <span class="star" data-value="3" tabindex="24">&#9733;</span>
+            <!-- Star for rating 3 -->
+            <span class="star" data-value="4" tabindex="25">&#9733;</span>
+            <!-- Star for rating 4 -->
+            <span class="star" data-value="5" tabindex="26">&#9733;</span>
+            <!-- Star for rating 5 -->
+        </div>
+
+        <button class="submit-rating" tabindex="27" onclick="window.location.href='thankyou.html'" >Submit</button>
+        <!-- Button to submit the rating -->
+
+        <p class="footer" tabindex="28">Powered by Naawi-Oodena</p>
+        <!-- Footer text for the rating card -->
     </div>
-    <button class="submit-rating" tabindex="27">Submit</button>
-    <p class="footer" tabindex="28">Powered by Naawi-Oodena</p>
 
-
-</div>
-<script>
-    // Paste the JavaScript here
-    const stars = document.querySelectorAll('.star');
-    stars.forEach((star, index) => {
-    star.addEventListener('click', () => {
-        const rating = index + 1;
-        stars.forEach((s, i) => {
-        s.classList.toggle('selected', i < rating);
+    <script>
+        // JavaScript to handle star rating functionality
+        const stars = document.querySelectorAll('.star');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                const rating = index + 1;
+                stars.forEach((s, i) => {
+                    s.classList.toggle('selected', i < rating);
+                });
+                console.log("Rated:", rating);
+            });
         });
-        console.log("Rated:", rating);
-    });
-    });
-</script>
-    <footer>
-        <p tabindex="29">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
-        <p tabindex="30">Website designed by [Aayan].</p>
-        <!-- Footer section with copyright information -->
-    </footer>
-    <button onclick="scrollToTop()" id="topButton" tabindex="31">Back to top</button>
-<!-- Button to scroll back to the top of the page -->
-<script>window.onscroll = function() {
-    let button = document.getElementById("topButton");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    button.style.display = "block";
-    } else {
-    button.style.display = "none";
-    }
-};
-  // Scroll to top when clicked
-function scrollToTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-}
-// JavaScript to show the button when scrolling down
-const topButton = document.getElementById('topButton');
+    </script>
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) { // Adjust the scroll threshold as needed
-        topButton.classList.add('show');
-    } else {
-        topButton.classList.remove('show');
-    }
-});
-</script>
+    <footer>
+        <!-- Footer section containing copyright and designer information -->
+        <p tabindex="29">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+        <!-- Copyright information -->
+        <p tabindex="30">Website designed by [Aayan].</p>
+        <!-- Designer credit -->
+    </footer>
+
+    <button onclick="scrollToTop()" id="topButton" tabindex="31">Back to top</button>
+    <!-- Button to scroll back to the top of the page -->
+
+    <script>
+        // JavaScript to handle the "Back to top" button functionality
+        window.onscroll = function () {
+            let button = document.getElementById("topButton");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        // Scroll to top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show the "Back to top" button when scrolling down
+        const topButton = document.getElementById('topButton');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                topButton.classList.add('show');
+            } else {
+                topButton.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>

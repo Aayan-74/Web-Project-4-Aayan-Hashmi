@@ -24,6 +24,8 @@ body {
 h1 {
     padding: auto; /* Centers the padding automatically. */
     text-align: center; /* Aligns the text to the center. */
+    letter-spacing: 1px; /* Adds space between letters. */
+    word-spacing: 1px; /* Adds space between words. */
 }
 
 /* The p element is styled for larger font size and centered text. */
@@ -188,13 +190,6 @@ footer {
     width: 350px; /* Adjusts the width of the image. */
 }
 
-/* Highlighted Text */
-/* Styles for text that needs to be emphasized. */
-.highlight {
-    color: yellow; /* Changes the text color to red. */
-    font-weight: bold; /* Makes the text bold. */
-}
-
 /* Form */
 /* The form is centered and styled with column layout and spacing. */
 form {
@@ -259,6 +254,7 @@ button:hover {
     z-index: 1000; /* Ensures the button appears above other elements. */
     opacity: 0; /* Initially hidden with opacity 0. */
     transition: opacity 0.3s ease; /* Smooth transition for opacity. */
+    text-transform: capitalize; /* Capitalizes the text inside the button. */
 }
 /* When the button becomes visible */
 #topButton.show {
@@ -266,7 +262,7 @@ button:hover {
     animation: fadeIn 0.5s ease forwards; /* Applies the fade-in animation. */
 }
 #topButton:hover {
-    background-image: linear-gradient(to right, orange, yellow); /* Blue to Green gradient */; /* Darkens the background color on hover. */
+    background-image: -o-linear-gradient(to right, orange, yellow); /* Blue to Green gradient */; /* Darkens the background color on hover. */
     transition: background-image 0.3s ease; /* Adds a smooth transition effect. */
     /* The button will change color when hovered over. */
     color: white; /* Sets the text color to white. */
@@ -426,4 +422,22 @@ transition: opacity ease 250ms;}
     background-image: -moz-linear-gradient(to right, orange, yellow); /*red-600 to yellow-600 */
     animation: buttonPulse 1s ease-out;
 }
+a:link {
+  text-decoration: none;
+  color: white; /* white */
+}
+
+a:visited {
+  color: gold; /* gold */
+}
+
+a:hover {
+  color: rgb(114, 24, 24); /* red */
+  text-decoration: underline;
+}
+
+a:active {
+  color: red; /* red */
+}
+
 

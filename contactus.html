@@ -49,16 +49,17 @@
             </ul>
 
             <div class="menu-toggle">&#9776;</div>
-            <!-- Menu toggle button for mobile navigation -->
+            <!-- Menu toggle button for mobile navigation (hamburger icon) -->
         </nav>
 
         <h1 tabindex="6" style="color: gold;">Contact Us</h1>
-        <!-- Main heading for the Contact Us page -->
+        <!-- Main heading for the Contact Us page, styled in gold -->
     </header>
 
     <section class="center-content">
         <!-- Section for introductory content -->
         <h1 tabindex="7">Reach out to us here!</h1>
+        <!-- Subheading inviting users to contact -->
     </section>
 
     <section class="center-content">
@@ -67,49 +68,54 @@
             We would love to hear from you! If you have any questions, comments, or feedback, please feel free to reach out to us.
             Naawi-Oodena is committed to creating a vibrant, sustainable community that honors the land and its history. We aim to foster economic growth, cultural revitalization, and social well-being for all.
         </p>
+        <!-- Paragraph describing the organization's mission and inviting contact -->
     </section>
 
     <section class="center-content">
         <!-- Section for the contact form heading -->
         <h1 tabindex="9">Send us a message here:</h1>
+        <!-- Heading for the contact form section -->
     </section>
 
     <section class="center-content">
         <!-- Section containing the contact form -->
         <form action="submit_form.php" method="post">
-            <!-- Form for users to send a message -->
+            <!-- Form for users to send a message; submits data to submit_form.php using POST method -->
 
-            <label for="name">Name:</label>
+            <label for="name">Type your name Here:</label>
             <!-- Label for the name input field -->
             <input type="text" id="name" name="name" required tabindex="10">
             <!-- Input field for the user's name, required for form submission -->
 
-            <label for="email">Email:</label>
+            <label for="email">Type your email Here:</label>
             <!-- Label for the email input field -->
             <input type="email" id="email" name="email" required tabindex="11">
             <!-- Input field for the user's email, required for form submission -->
 
-            <label for="message">Message:</label>
+            <label for="message">Type your message Here:</label>
             <!-- Label for the message text area -->
             <textarea id="message" name="message" required style="border-radius: 20px;" tabindex="12"></textarea>
-            <!-- Text area for the user's message, required for form submission -->
+            <!-- Text area for the user's message, required for form submission, with rounded corners -->
 
             <br>
-            <button type="submit" tabindex="13">Submit</button>
+            <button type="submit" tabindex="13">Click the Submit button to send your message:</button>
             <!-- Submit button for the form -->
         </form>
-
+<br>
         <p tabindex="14">We will get back to you as soon as possible.</p>
-        <!-- Message displayed below the form -->
+        <!-- Message displayed below the form to reassure users -->
     </section>
 
     <section class="center-content">
         <!-- Section for additional contact information -->
         <h1 tabindex="15">Other Contact Information</h1>
+        <!-- Heading for alternative contact methods -->
         <p tabindex="16">If you prefer to reach us directly, you can contact us at:</p>
+        <!-- Instruction for direct contact -->
         <p tabindex="17">Naawi-Oodena@gmail.com</p>
         <!-- Email address for direct contact -->
         <p tabindex="18">Or</p>
+        <!-- Separator text -->
         <p tabindex="19">(204) 123-4567</p>
         <!-- Phone number for direct contact -->
     </section>
@@ -127,7 +133,7 @@
         <!-- Question prompting the user to rate their experience -->
 
         <div class="stars" id="rating-stars">
-            <!-- Star rating system -->
+            <!-- Star rating system container -->
             <span class="star" data-value="1" tabindex="22">&#9733;</span>
             <!-- Star for rating 1 -->
             <span class="star" data-value="2" tabindex="23">&#9733;</span>
@@ -141,7 +147,7 @@
         </div>
 
         <button class="submit-rating" tabindex="27" onclick="window.location.href='thankyou.html'" >Submit</button>
-        <!-- Button to submit the rating -->
+        <!-- Button to submit the rating; redirects to thankyou.html -->
 
         <p class="footer" tabindex="28">Powered by Naawi-Oodena</p>
         <!-- Footer text for the rating card -->
@@ -150,12 +156,19 @@
     <script>
         // JavaScript to handle star rating functionality
         const stars = document.querySelectorAll('.star');
+        // Select all elements with the class 'star'
         stars.forEach((star, index) => {
+            // Loop through each star
             star.addEventListener('click', () => {
+                // Add click event listener to each star
                 const rating = index + 1;
+                // Calculate the rating based on the clicked star's index
                 stars.forEach((s, i) => {
+                    // Loop through all stars
                     s.classList.toggle('selected', i < rating);
+                    // Highlight stars up to the selected rating
                 });
+                // Log the selected rating to the console
                 console.log("Rated:", rating);
             });
         });
@@ -163,10 +176,10 @@
 
     <footer>
         <!-- Footer section containing copyright and designer information -->
-        <p tabindex="29">&copy; 2025 Naawi-Oodena. All rights reserved.</p>
+        <p tabindex="29">&copy; 2050 Naawi-Oodena. All rights reserved.</p>
         <!-- Copyright information -->
         <p tabindex="30">Website designed by [Aayan]. Background image and logo are AI-generated by ChatGPT.</p>
-        <!-- Designer credit -->
+        <!-- Designer credit and image attribution -->
     </footer>
 
     <button onclick="scrollToTop()" id="topButton" tabindex="31">Back to top</button>
@@ -174,27 +187,38 @@
 
     <script>
         // JavaScript to handle the "Back to top" button functionality
+
         window.onscroll = function () {
+            // When the user scrolls, execute this function
             let button = document.getElementById("topButton");
+            // Get the "Back to top" button element
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                // If the user has scrolled down more than 200px
                 button.style.display = "block";
+                // Show the button
             } else {
                 button.style.display = "none";
+                // Hide the button
             }
         };
 
         // Scroll to top when the button is clicked
         function scrollToTop() {
+            // Smoothly scroll the window to the top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Show the "Back to top" button when scrolling down
+        // Show the "Back to top" button when scrolling down (alternative/additional logic)
         const topButton = document.getElementById('topButton');
         window.addEventListener('scroll', () => {
+            // Listen for scroll events
             if (window.scrollY > 200) {
+                // If scrolled more than 200px
                 topButton.classList.add('show');
+                // Add 'show' class to the button (for CSS transitions if defined)
             } else {
                 topButton.classList.remove('show');
+                // Remove 'show' class when not needed
             }
         });
     </script>

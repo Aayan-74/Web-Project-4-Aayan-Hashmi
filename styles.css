@@ -2,8 +2,7 @@
 The color red is often associated with energy, passion, and action. It can evoke strong emotions and is often used to grab attenion.
 The color red is also associated with warmth and can create a welcoming atmosphere. It can stimulate the mind and increase heart rate.
 The color red is also part of the medicine wheel which is a big part of the Indigenous culture. The red color represents the East direction and is associated with the element of fire, which symbolizes energy, passion, and action. It is also associated with the season of spring, which represents new beginnings and growth.
-The color red is also a very bold color and can be used to create a strong visual impact.
-The grade level I chose for this website is Grade 4-8*/
+The color red is also a very bold color and can be used to create a strong visual impact.*/
 
 /* General Styles */
 /* The body element is styled to remove default margins, set a sans-serif font, and apply a beige background color. */
@@ -37,6 +36,7 @@ p {
     margin: 0; /* Removes default margin. */
     letter-spacing: 1px; /* Adds space between letters. */
     word-spacing: 1px; /* Adds space between words. */
+    text-overflow: auto; /* Allows text to overflow if it exceeds the container. */
 }
 nav {background-color: rgb(114, 24, 24); /*sets the background color to red */
     padding: 16px;
@@ -74,6 +74,7 @@ nav a:hover {background-image: linear-gradient(to right, orange, yellow); /*red-
     padding: 0; /* Removes default padding. */
     margin: 0; /* Removes default margin. */
     letter-spacing: 1px; /* Adds space between letters. */
+    font-size: larger; /* Increases the font size. */
 }
 
 /* Individual list items are displayed inline. */
@@ -424,7 +425,7 @@ transition: opacity ease 250ms;}
 }
 a:link {
   text-decoration: none;
-  color: white; /* white */
+  color: rgb(156, 189, 36); /* green */
 }
 
 a:visited {
@@ -440,4 +441,15 @@ a:active {
   color: red; /* red */
 }
 
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
 
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}

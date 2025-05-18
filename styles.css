@@ -425,7 +425,7 @@ transition: opacity ease 250ms;}
 }
 a:link {
 text-decoration: none;
-  color: rgb(156, 189, 36); /* green */
+  color: orange; /* orange */
 }
 
 a:visited {
